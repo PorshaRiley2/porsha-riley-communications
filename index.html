@@ -1,3 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porsha Riley HQ</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f6f4f1;
+      --surface: #ffffff;
+      --primary: #2b2b2b;
+      --secondary: #6a6763;
+      --accent: #3e3a36;
+      --taupe: #d8d2c8;
+      --border: #e6e1da;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--primary);
+      background: linear-gradient(180deg, #f6f4f1 0%, #f2efe9 100%);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: auto;
+    }
+
+    header {
+      padding: 90px 20px 70px;
+      background: linear-gradient(135deg, #d8d2c8 0%, #e7e1d8 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .headshot {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #e0dbd4;
+    }
+
+    .hero-title {
+      font-size: 42px;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-sub {
+      font-size: 16px;
+      color: var(--secondary);
+      max-width: 520px;
+      margin-top: 8px;
+    }
+
+    nav {
+      margin-top: 18px;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    section {
+      padding: 85px 20px;
+    }
+
+    .section-inner {
+      max-width: 860px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      width: 42px;
+      height: 2px;
+      background: var(--accent);
+      margin: 14px 0 28px;
+    }
+
+    p {
+      font-size: 15.5px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 22px;
+      border-radius: 6px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+
+    .case-study {
+      background: var(--surface);
+      padding: 26px;
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    ul {
+      margin-top: 12px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #d8d2c8 0%, #cfc7bc 100%);
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12.5px;
+      color: var(--secondary);
+      border-top: 1px solid var(--border);
+    }
+
+    iframe {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .header-flex {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
 <header>
   <div class="container header-flex">
     <img src="porsha-riley-headshot.jpg" class="headshot" alt="Porsha Riley">
@@ -18,6 +187,7 @@
         <a href="#services">Advisory</a>
         <a href="#experience">Experience</a>
         <a href="#media">Media</a>
+        <a href="#engagement">Engagement</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -106,10 +276,6 @@
   </div>
 </section>
 
-<section class="cta">
-  <h2>Let us work together</h2>
-  <p>Available for executive advisory and strategic communications consulting.</p>
-</section>
 <section id="engagement">
   <div class="section-inner">
     <h2>Engagement Model</h2>
@@ -120,7 +286,7 @@
     </p>
 
     <ul>
-      <li>Strategic advisory and communications planning</li>
+      <li>Strategic communications advisory and planning</li>
       <li>Executive messaging and stakeholder alignment</li>
       <li>Crisis communications and rapid response support</li>
       <li>Short-term and ongoing advisory engagements</li>
@@ -131,14 +297,32 @@
     </p>
   </div>
 </section>
+
+<section class="cta">
+  <h2>Advisory Engagements</h2>
+  <p>
+    Available for executive advisory, crisis communications and strategic stakeholder engagement.
+  </p>
+</section>
+
 <section id="contact">
   <div class="section-inner">
     <h2>Contact</h2>
     <div class="divider"></div>
-    <p>Email: porshariley2@gmail.com</p>
+
+    <p>
+      For advisory inquiries, please reach out via email. All engagements begin with an initial consultation to determine scope and alignment.
+    </p>
+
+    <p>
+      Email: porshariley2@gmail.com
+    </p>
   </div>
 </section>
 
 <footer>
   © 2026 Porsha Riley HQ
 </footer>
+
+</body>
+</html>

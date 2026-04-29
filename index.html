@@ -2,29 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Porsha Riley HQ</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #f6f4f1;
-      --surface: #ffffff;
+      --bg: #f4f1ec;
       --primary: #2b2b2b;
-      --secondary: #6a6763;
+      --secondary: #6b6762;
       --accent: #3e3a36;
-      --taupe: #d8d2c8;
-      --border: #e6e1da;
+      --soft: #e9e4dc;
+      --border: #ded8cf;
     }
 
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       color: var(--primary);
-      background: linear-gradient(180deg, #f6f4f1 0%, #f2efe9 100%);
+      background: linear-gradient(180deg, #f4f1ec 0%, #eee9e2 100%);
       line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
     }
 
     .container {
@@ -34,7 +32,7 @@
 
     header {
       padding: 90px 20px 70px;
-      background: linear-gradient(135deg, #d8d2c8 0%, #e7e1d8 100%);
+      background: linear-gradient(135deg, #d9d3c9 0%, #e7e2d9 100%);
       border-bottom: 1px solid var(--border);
     }
 
@@ -49,7 +47,7 @@
       height: 170px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid #e0dbd4;
+      border: 2px solid #e3ddd5;
     }
 
     .hero-title {
@@ -73,14 +71,13 @@
       margin-right: 18px;
       text-decoration: none;
       color: var(--accent);
-      font-weight: 500;
       font-size: 13px;
-      letter-spacing: 0.4px;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     section {
-      padding: 85px 20px;
+      padding: 80px 20px;
     }
 
     .section-inner {
@@ -96,14 +93,20 @@
     }
 
     .divider {
-      width: 42px;
+      width: 40px;
       height: 2px;
       background: var(--accent);
-      margin: 14px 0 28px;
+      margin: 15px 0 25px;
     }
 
     p {
       font-size: 15.5px;
+    }
+
+    .alt-section {
+      background: var(--soft);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
 
     .services {
@@ -114,37 +117,16 @@
     }
 
     .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      padding: 22px;
-      border-radius: 6px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      padding: 10px 0;
     }
 
-    .case-study {
-      background: var(--surface);
-      padding: 26px;
-      border-left: 3px solid var(--accent);
-      border-radius: 4px;
-      border: 1px solid var(--border);
+    .card h3 {
+      margin-bottom: 6px;
     }
 
     ul {
-      margin-top: 12px;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, #d8d2c8 0%, #cfc7bc 100%);
-      text-align: center;
-      padding: 70px 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 12.5px;
-      color: var(--secondary);
-      border-top: 1px solid var(--border);
+      margin-top: 10px;
+      padding-left: 18px;
     }
 
     .video-wrapper {
@@ -152,27 +134,35 @@
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
-      overflow: hidden;
       border-radius: 6px;
+      overflow: hidden;
     }
 
     .video-wrapper iframe {
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #d9d3c9 0%, #cfc7bc 100%);
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      color: var(--secondary);
+      border-top: 1px solid var(--border);
     }
 
     @media (max-width: 768px) {
       .header-flex {
         flex-direction: column;
         text-align: center;
-      }
-
-      nav {
-        margin-top: 12px;
       }
     }
   </style>
@@ -182,6 +172,7 @@
 
 <header>
   <div class="container header-flex">
+
     <img src="porsha-riley-headshot.jpg" class="headshot" alt="Porsha Riley">
 
     <div>
@@ -204,6 +195,7 @@
         <a href="#contact">Contact</a>
       </nav>
     </div>
+
   </div>
 </header>
 
@@ -222,7 +214,7 @@
   </div>
 </section>
 
-<section id="services">
+<section id="services" class="alt-section">
   <div class="section-inner">
     <h2>Advisory</h2>
     <div class="divider"></div>
@@ -230,22 +222,22 @@
     <div class="services">
       <div class="card">
         <h3>Media Strategy</h3>
-        <p>Shaping narrative positioning for public visibility and stakeholder trust.</p>
+        <p>Shaping narrative positioning and visibility.</p>
       </div>
 
       <div class="card">
         <h3>Crisis Communications</h3>
-        <p>Rapid response communication during high-risk and high-visibility events.</p>
+        <p>Guidance during high-risk situations.</p>
       </div>
 
       <div class="card">
         <h3>Executive Advisory</h3>
-        <p>Strategic counsel for leadership messaging and organizational positioning.</p>
+        <p>Leadership messaging and positioning.</p>
       </div>
 
       <div class="card">
         <h3>Stakeholder Engagement</h3>
-        <p>Alignment of messaging across agencies, partners and regulatory bodies.</p>
+        <p>Alignment across partners and agencies.</p>
       </div>
     </div>
   </div>
@@ -253,69 +245,59 @@
 
 <section id="experience">
   <div class="section-inner">
-    <h2>Selected Experience</h2>
+    <h2>Experience</h2>
     <div class="divider"></div>
 
-    <div class="case-study">
-      <ul>
-        <li>Built and led agency-wide communications strategy across internal, public and media audiences in a high-visibility regulatory environment</li>
-        <li>Served as senior advisor and spokesperson to executive leadership during high-stakes communications issues</li>
-        <li>Led crisis communications, stakeholder engagement and cross-agency messaging alignment</li>
-        <li>Directed statewide media relations and public communication strategy across government and regulatory initiatives</li>
-        <li>Produced broadcast and digital journalism across breaking news, crisis events and public interest reporting</li>
-        <li>Developed expertise in storytelling, audience engagement and media strategy across multiple platforms</li>
-      </ul>
-    </div>
+    <ul>
+      <li>Led agency-wide communications strategy in a high-visibility regulatory environment</li>
+      <li>Served as executive advisor and spokesperson during high-stakes issues</li>
+      <li>Directed crisis communications and stakeholder alignment across agencies</li>
+      <li>Managed statewide media relations and public messaging strategy</li>
+      <li>Produced broadcast journalism covering breaking news and crisis events</li>
+    </ul>
   </div>
 </section>
 
-<section id="media">
+<section id="media" class="alt-section">
   <div class="section-inner">
     <h2>Media Background</h2>
     <div class="divider"></div>
 
     <p>
-      Background in broadcast journalism with experience covering breaking news, crisis events and high-impact public stories. This experience informs executive communications strategy and crisis advisory work.
+      Background in broadcast journalism covering breaking news, crisis events and high-impact public stories. This experience informs executive communications strategy and advisory work.
     </p>
 
     <div class="video-wrapper">
-      <iframe
-        src="https://www.youtube.com/embed/c56mQnQLqHg"
-        title="Broadcast Work Sample"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+      <iframe src="https://www.youtube.com/embed/c56mQnQLqHg" title="Broadcast Work Sample" allowfullscreen></iframe>
     </div>
   </div>
 </section>
 
 <section id="engagement">
   <div class="section-inner">
-    <h2>Engagement Model</h2>
+    <h2>Engagement</h2>
     <div class="divider"></div>
 
     <p>
-      Advisory engagements are structured based on scope, urgency and organizational needs. Support is tailored for executive communications strategy, crisis response and stakeholder engagement in high-visibility environments.
+      Advisory engagements are structured based on scope, urgency and organizational needs.
     </p>
 
     <ul>
-      <li>Strategic communications advisory and planning</li>
-      <li>Executive messaging and stakeholder alignment</li>
-      <li>Crisis communications and rapid response support</li>
-      <li>Short-term and ongoing advisory engagements</li>
+      <li>Strategic communications advisory</li>
+      <li>Crisis and issues management</li>
+      <li>Executive messaging and positioning</li>
+      <li>Stakeholder engagement strategy</li>
     </ul>
 
     <p>
-      Fees are determined by scope and organizational needs and are provided upon consultation.
+      Service fees are based on scope and organizational needs and are provided upon consultation.
     </p>
   </div>
 </section>
 
 <section class="cta">
   <h2>Advisory Engagements</h2>
-  <p>
-    Available for executive advisory, crisis communications and strategic stakeholder engagement.
-  </p>
+  <p>Available for strategic communications and executive advisory.</p>
 </section>
 
 <section id="contact">
@@ -323,13 +305,7 @@
     <h2>Contact</h2>
     <div class="divider"></div>
 
-    <p>
-      For advisory inquiries, please reach out via email. All engagements begin with an initial consultation to determine scope and alignment.
-    </p>
-
-    <p>
-      Email: porshariley2@gmail.com
-    </p>
+    <p>Email: porshariley2@gmail.com</p>
   </div>
 </section>
 

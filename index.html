@@ -147,9 +147,22 @@
       border-top: 1px solid var(--border);
     }
 
-    iframe {
-      max-width: 100%;
+    .video-wrapper {
+      margin-top: 30px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
       border-radius: 6px;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     @media (max-width: 768px) {
@@ -265,13 +278,13 @@
       Background in broadcast journalism with experience covering breaking news, crisis events and high-impact public stories. This experience informs executive communications strategy and crisis advisory work.
     </p>
 
-    <div style="margin-top:30px; text-align:center;">
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/bdp3R67Q2i4"
-        title="Reporter Reel"
-        frameborder="0"
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/c56mQnQLqHg"
+        title="Broadcast Work Sample"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 </section>

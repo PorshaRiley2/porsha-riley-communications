@@ -42,10 +42,11 @@
       gap: 50px;
     }
 
+    /* SQUARE PHOTO (updated) */
     .headshot {
       width: 240px;
       height: 240px;
-      border-radius: 50%;
+      border-radius: 8px;
       object-fit: cover;
       border: 2px solid #e3ddd5;
     }
@@ -85,7 +86,7 @@
     }
 
     section {
-      padding: 70px 20px;
+      padding: 80px 20px;
     }
 
     .section-inner {
@@ -117,19 +118,29 @@
       border-bottom: 1px solid var(--border);
     }
 
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 25px;
+    }
+
+    .card h3 {
+      margin-bottom: 6px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--secondary);
+      margin: 0;
+    }
+
     ul {
       margin-top: 10px;
       padding-left: 18px;
-    }
-
-    .role {
-      margin-bottom: 40px;
-    }
-
-    .role-title {
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: var(--primary);
     }
 
     footer {
@@ -169,6 +180,7 @@
 
       <nav>
         <a href="#about">Overview</a>
+        <a href="#services">Services</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -196,39 +208,63 @@
   </div>
 </section>
 
-<section id="experience" class="alt-section">
+<section id="services" class="alt-section">
+  <div class="section-inner">
+    <h2>Services</h2>
+    <div class="divider"></div>
+
+    <div class="services">
+      <div class="card">
+        <h3>Media Strategy</h3>
+        <p>Shaping narrative positioning and public messaging.</p>
+      </div>
+
+      <div class="card">
+        <h3>Crisis Communications</h3>
+        <p>Guidance during high-pressure and sensitive situations.</p>
+      </div>
+
+      <div class="card">
+        <h3>Executive Advisory</h3>
+        <p>Strategic communications support for leadership teams.</p>
+      </div>
+
+      <div class="card">
+        <h3>Stakeholder Engagement</h3>
+        <p>Alignment across agencies, partners and public audiences.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
   <div class="section-inner">
     <h2>Experience</h2>
     <div class="divider"></div>
 
-    <div class="role">
-      <div class="role-title">Communications Director — Oklahoma Medical Marijuana Authority (2024–2026)</div>
-      <ul>
-        <li>Led statewide communications strategy across internal, media and public audiences in a high-visibility regulatory environment</li>
-        <li>Served as senior advisor and primary spokesperson to executive leadership, managing high-volume media relations and increasing positive coverage by approximately 40%</li>
-        <li>Directed crisis communications and stakeholder engagement across agencies and industry partners</li>
-        <li>Built and scaled communications infrastructure and mentored staff to improve message clarity and consistency</li>
-      </ul>
-    </div>
+    <ul>
+      <li>Built and scaled agency-wide communications infrastructure, leading statewide strategy across internal, media and public audiences</li>
+      <li>Served as senior advisor and primary spokesperson to executive leadership, managing high-volume media relations and increasing positive media coverage by approximately 40%</li>
+      <li>Directed crisis communications and cross-agency stakeholder engagement during high-visibility regulatory initiatives</li>
+      <li>Led and mentored communications staff, implementing editorial workflows and approval processes to improve clarity and consistency</li>
+    </ul>
 
-    <div class="role">
-      <div class="role-title">Public Relations Manager — Oklahoma Medical Marijuana Authority (2022–2024)</div>
-      <ul>
-        <li>Led statewide media relations and public messaging campaigns, increasing positive coverage by approximately 35%</li>
-        <li>Developed executive communications and internal alignment strategies to support cross-functional coordination</li>
-        <li>Coordinated messaging across regulatory and compliance partners to ensure consistency and public trust</li>
-      </ul>
-    </div>
+    <ul>
+      <li>Led statewide media relations and public messaging campaigns, increasing positive media coverage by approximately 35%</li>
+      <li>Developed executive communications and internal alignment strategies to support cross-functional coordination</li>
+      <li>Coordinated messaging across partner agencies and compliance teams to ensure regulatory consistency and public trust</li>
+    </ul>
 
-    <div class="role">
-      <div class="role-title">Broadcast Journalism & Digital Media (2014–2021)</div>
-      <ul>
-        <li>Produced broadcast and digital news content for major-market newsrooms, supporting audience growth and market performance</li>
-        <li>Reported on breaking and crisis events under tight deadlines, delivering accurate coverage to large audiences</li>
-        <li>Covered high-impact public interest stories driving strong audience engagement</li>
-        <li>Developed digital-first reporting approaches across broadcast, web and social platforms</li>
-      </ul>
-    </div>
+    <ul>
+      <li>Produced broadcast and digital news content for major-market newsroom environments</li>
+      <li>Reported on breaking and crisis events under tight deadlines with accurate public-facing coverage</li>
+      <li>Covered high-impact public interest stories driving strong audience engagement</li>
+    </ul>
+
+    <ul>
+      <li>Developed digital-first reporting approaches across broadcast, web and social platforms</li>
+      <li>Optimized content workflows to increase digital engagement and reach</li>
+    </ul>
 
   </div>
 </section>

@@ -10,9 +10,9 @@
   <style>
     :root {
       --bg: #f4f1ec;
-      --primary: #2b2b2b;
-      --secondary: #6b6762;
-      --accent: #3e3a36;
+      --primary: #2a2420;
+      --secondary: #6a635d;
+      --accent: #3b2f2a;
       --soft: #e9e4dc;
       --border: #ded8cf;
     }
@@ -43,27 +43,33 @@
     }
 
     .headshot {
-  width: 240px;
-  height: 240px;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 2px solid #e3ddd5;
-  transform: translateY(4px);
-}
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #e3ddd5;
+    }
 
-   .hero-title {
-  font-size: 44px;
-  margin-bottom: 10px;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-}
+    .hero-title {
+      font-size: 44px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      line-height: 1.1;
+    }
 
     .hero-sub {
       font-size: 16px;
       color: var(--secondary);
       max-width: 520px;
       margin-top: 8px;
+    }
+
+    .header-flex > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     nav {
@@ -112,36 +118,9 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 22px;
-      margin-top: 25px;
-    }
-
-    .card {
-      padding: 10px 0;
-    }
-
     ul {
       margin-top: 10px;
       padding-left: 18px;
-    }
-
-    .video-wrapper {
-      margin-top: 30px;
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-
-    .video-wrapper iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 0;
     }
 
     footer {
@@ -171,11 +150,17 @@
     <div>
       <h1 class="hero-title">Porsha Riley</h1>
 
+      <p class="hero-sub">
+        Senior communications leader specializing in crisis communications, stakeholder engagement and strategic messaging in high-visibility environments.
+      </p>
+
+      <p class="hero-sub">
+        Former communications director and broadcast journalist with experience advising C-suite leadership on regulatory and public-facing communications strategy.
+      </p>
+
       <nav>
         <a href="#about">Overview</a>
-        <a href="#services">Advisory</a>
         <a href="#experience">Experience</a>
-        <a href="#media">Media</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -188,72 +173,58 @@
     <h2>Overview</h2>
     <div class="divider"></div>
 
-<p>
-I work closely with executive leadership on regulatory and public-facing communications, focusing on risk awareness and support for C-suite decision-making in fast-moving environments.
-</p>
+    <p>
+      Senior communications leader with more than 10 years of experience in high-visibility and regulated environments, specializing in crisis communications, stakeholder engagement and strategic messaging.
+    </p>
 
-<p>
-My background is in broadcast journalism and public affairs communications, where I developed a practical approach to translating complex issues into clear, accurate messaging for both internal and external audiences.
-</p>
+    <p>
+      I work closely with executive leadership on regulatory and public-facing communications, focusing on risk awareness and supporting C-suite decision-making in fast-moving environments.
+    </p>
+
+    <p>
+      My background is in broadcast journalism and public affairs communications, where I developed a practical approach to translating complex issues into clear, accurate messaging for internal and external audiences.
+    </p>
+
+    <p>
+      Strategic communications, crisis communications, stakeholder engagement, media relations, executive advisory, reputation management, regulatory communications, content strategy, digital strategy and public speaking.
+    </p>
   </div>
 </section>
 
-<section id="services" class="alt-section">
-  <div class="section-inner">
-    <h2>Advisory</h2>
-    <div class="divider"></div>
-
-    <div class="services">
-      <div class="card">
-        <h3>Media Strategy</h3>
-        <p>Shaping narrative positioning and visibility.</p>
-      </div>
-
-      <div class="card">
-        <h3>Crisis Communications</h3>
-        <p>Guidance during high-risk situations.</p>
-      </div>
-
-      <div class="card">
-        <h3>Executive Advisory</h3>
-        <p>Leadership messaging and positioning.</p>
-      </div>
-
-      <div class="card">
-        <h3>Stakeholder Engagement</h3>
-        <p>Alignment across partners and agencies.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="experience">
+<section id="experience" class="alt-section">
   <div class="section-inner">
     <h2>Experience</h2>
     <div class="divider"></div>
 
     <ul>
-      <li>Led agency-wide communications strategy in a high-visibility regulatory environment</li>
-      <li>Served as executive advisor and spokesperson during high-stakes issues</li>
-      <li>Directed crisis communications and stakeholder alignment across agencies</li>
-      <li>Managed statewide media relations and public messaging strategy</li>
-      <li>Produced broadcast journalism covering breaking news and crisis events</li>
+      <li>Built and scaled agency-wide communications infrastructure, leading statewide strategy across internal, media and public audiences</li>
+      <li>Served as senior advisor and primary spokesperson to executive leadership, managing high-volume media relations and increasing positive media coverage by approximately 40%</li>
+      <li>Directed crisis communications and cross-agency stakeholder engagement during high-visibility regulatory initiatives</li>
+      <li>Led and mentored communications staff, implementing editorial workflows and approval processes to improve clarity and consistency</li>
     </ul>
-  </div>
-</section>
 
-<section id="media" class="alt-section">
-  <div class="section-inner">
-    <h2>Media Background</h2>
-    <div class="divider"></div>
+    <ul>
+      <li>Led statewide media relations and public messaging campaigns, increasing positive media coverage by approximately 35%</li>
+      <li>Developed executive communications and internal alignment strategies to support cross-functional coordination</li>
+      <li>Coordinated messaging across partner agencies and compliance teams to ensure regulatory consistency and public trust</li>
+    </ul>
 
-    <p>
-      Background in broadcast journalism covering breaking news, crisis events and high-impact public stories. This experience informs executive communications strategy and advisory work.
-    </p>
+    <ul>
+      <li>Produced broadcast and digital news content for a major-market newsroom, supporting audience growth and market performance</li>
+      <li>Reported on breaking and crisis events under tight deadlines, delivering accurate coverage to large audiences</li>
+      <li>Covered high-impact public interest stories driving strong audience engagement</li>
+    </ul>
 
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/c56mQnQLqHg" title="Broadcast Work Sample" allowfullscreen></iframe>
-    </div>
+    <ul>
+      <li>Filmed, edited and produced multi-platform news content across broadcast, digital and social channels</li>
+      <li>Developed digital-first reporting approaches that increased online engagement</li>
+    </ul>
+
+    <ul>
+      <li>Created digital news content and optimized press materials to support website traffic growth</li>
+      <li>Managed social media channels and supported digital strategy, increasing audience interaction and visibility</li>
+    </ul>
+
   </div>
 </section>
 
@@ -262,7 +233,7 @@ My background is in broadcast journalism and public affairs communications, wher
     <h2>Contact</h2>
     <div class="divider"></div>
 
-    <p>Email: porshariley2@gmail.com</p>
+    <p>porshariley2@gmail.com</p>
   </div>
 </section>
 
